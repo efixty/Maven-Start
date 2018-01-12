@@ -1,16 +1,23 @@
 package com.iunetworks.internship.maven.test;
 
+import java.util.*;
+import java.io.*;
+
 public class Main {
 
-    public static void main(String[] args) {
+	private static BufferedReader reader;
+	private static ArrayList arrayList;
 
-        int a = Integer.parseInt(args[0]);
-        int b = Integer.parseInt(args[1]);
+    public static void main(String[] args) throws Exception {
 
-        System.out.println(sum(a, b));
-    }
+    	arrayList = new ArrayList();
+    	reader = new BufferedReader(new InputStreamReader(System.in));
 
-    public static int sum(int a, int b) {
-        return a + b;
-    }
+    	while(true) {
+
+    		arrayList.add(new byte[Integer.parseInt(reader.readLine()) * 1024]);
+
+    	}
+
+	}
 }
