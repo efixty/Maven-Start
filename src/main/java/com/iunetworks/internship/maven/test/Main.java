@@ -1,3 +1,5 @@
+package com.iunetworks.internship.maven.test;
+
 public class Main {
 
     public static void main(String[] args) {
